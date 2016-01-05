@@ -6,10 +6,10 @@
       <!-- no results -->
       <div class="col-md-12" ng-if="status === 'notFound'">
           <div class="col-md-12">
-            <h1>Failed to locate document. <i aria-hidden="true" class="fa fa-meh-o"></i></h1>
+            <h1>读取文件失败. <i aria-hidden="true" class="fa fa-meh-o"></i></h1>
 
             <p>
-              Unfortunately I could not find any documents matching that id, of that type, in that index. I tried really hard. I wanted it to be there. Sometimes I swear documents grow legs and just walk out of the index. Sneaky. I wish I could offer some advice here, something to make you feel better
+              指定的Index中无法匹配任何信息.
             </p>
 
           </div>
@@ -18,10 +18,10 @@
             <!-- no results -->
       <div class="col-md-12" ng-if="status === 'error'">
           <div class="col-md-12">
-            <h1>This is bad. <i aria-hidden="true" class="fa fa-meh-o"></i></h1>
+            <h1>这是坏的. <i aria-hidden="true" class="fa fa-meh-o"></i></h1>
 
             <p>
-              Oh no. Something went very wrong. Its not just that I couldn't find your document, I couldn't even try. The index was missing, or the type. Go check out Elasticsearch, something isn't quite right here.
+              Index丢失,或者type丢失,你应该去查看一下ES,看看是不是配置错误
             </p>
 
           </div>
@@ -30,7 +30,7 @@
       <!-- loading -->
       <div class="col-md-12" ng-if="status === undefined">
         <div class="discover-overlay">
-          <h2>Searching</h2>
+          <h2>查询中</h2>
           <div class="spinner large"></div>
           <div ng-show="fetchStatus">{{fetchStatus.complete}}/{{fetchStatus.total}}</div>
         </div>
