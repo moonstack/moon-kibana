@@ -7,28 +7,28 @@
     <button
       ng-if="setDefault"
       ng-click="setDefault()"
-      tooltip="Set as default index"
+      tooltip="设置默认索引"
       class="btn btn-success">
-      <span class="sr-only">Set as default index</span>
+      <span class="sr-only">设置默认索引</span>
       <i aria-hidden="true" class="fa fa-star"></i>
     </button>
     <button
       ng-if="refreshFields"
       confirm-click="refreshFields()"
-      confirmation="This will reset the field popularity counters. Are you sure you want to reload your fields?"
-      tooltip="Reload field list"
+      confirmation="这个操作会重置域(field)的计数器,你确定吗?"
+      tooltip="Reload域(field)列表"
       class="btn btn-warning">
-      <span class="sr-only">Reload field list</span>
+      <span class="sr-only">Reload域(field)列表</span>
       <i aria-hidden="true" class="fa fa-refresh"></i>
     </button>
     <button
       ng-if="delete"
       confirm-click="delete()"
-      aria-label="Remove index pattern"
-      confirmation="Are you sure you want to remove this index pattern?"
-      tooltip="Remove index pattern"
+      aria-label="删除索引"
+      confirmation="你确定要删除这个索引吗?"
+      tooltip="删除索引"
       class="btn btn-danger">
-      <span class="sr-only">Remove index pattern</span>
+      <span class="sr-only">删除索引</span>
       <i aria-hidden="true" class="fa fa-trash"></i>
     </button>
   </div>
