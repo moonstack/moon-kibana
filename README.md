@@ -5,7 +5,7 @@ kibana 4.1.4 for Chinese
 #通过一段时间的折腾我们深知自身英语功底较差,某些未翻译字段确实不知道如何翻译.
 #我们希望获得帮助,如果您有兴趣,请联系下面的邮箱,加入我们吧!
 
-# Email: root#moonstack.org
+# Email: feng#moonstack.org
 
 1.分支关系
 temp ---->> beta ---->> master
